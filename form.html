@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fireDisplay.html">FireBase Data</a></li>
+            <li><a href="localDisplay.html">LocalSorage Data</a></li>
+        </ul>
+    </nav>
+    
+    <form action="" class="newUserForm">
+        <div >
+            <img src="" alt="Profile Picture" id="profile-photo">
+            <input type="file" name="photo" id="photo" accept="image/*">
+            <!-- <label for="photo">Profile Pic</label> -->
+        </div>
+        <div>
+            <input type="text" placeholder="Enter name" name="uname" id="name" required>
+            <label for="name">Name</label>
+        </div>
+        <div>
+            <input type="tel" placeholder="Enter phone number" name="phone" id="phone" required >
+            <label for="phone">Phone No.</label>
+        </div>
+        <div>
+            <input type="email" placeholder="Enter email" name="email" id="email" required>
+            <label for="email">Email</label>
+        </div>
+        <div>
+            <input type="date" placeholder="Enter DOB" name="dob" id="dob" required>
+            <!-- <label for="dob">D.O.B.</label> -->
+        </div>
+        <!-- <input type="checkbox" name="SaveLocal" id="checkLocal" >
+        <label for="checkLocal">Hello</label>
+        <input type="checkbox" name="SaveFire" id="checkFire" > -->
+
+        <!-- <button type="submit">Submit</button> -->
+        <div class="saveBtn">
+            <button class="uploadFire">Save to Firebase</button>
+            <button class="uploadLocal">Save to Local Storage</button>
+        </div>
+        <button type="submit">Add Another User</button>
+    </form>
+
+
+    <!-- <button class="btn">Get items</button> -->
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore-compat.js"></script>
+    <script type="module" src="fire.js"></script>
+</body>
+</html>
